@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f4f1e1;  /* Light beige background for a vintage look */
+    color: #3a3a3a;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #4e4e4e;
+    padding-bottom: 15px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #4e4e4e;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #4e4e4e;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#location-input {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#location-input label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #5c5c5c;
+}
+
+#location-input input {
+    padding: 10px;
+    font-size: 1.1rem;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+}
+
+#location-input button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #8b6b3c;
+    color: white;
+    border: 1px solid #8b6b3c;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#location-input button:hover {
+    background-color: #6e4c2a;
+}
+
+section {
+    margin-top: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+#forecast ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#forecast li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+#forecast li strong {
+    color: #8b6b3c;
+}
+
+#soil-info {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+#soil-info label {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    display: block;
+    color: #5c5c5c;
+}
+
+#soil-info input, #soil-info select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#soil-info button {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    background-color: #8b6b3c;
+    color: white;
+    border: 1px solid #8b6b3c;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#soil-info button:hover {
+    background-color: #6e4c2a;
+}
+
+#planting-recommendations {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+#planting-recommendations h2 {
+    font-size: 2rem;
+    color: #4e4e4e;
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1rem;
+    color: #6b6b6b;
+}
+
+footer p {
+    font-style: italic;
+}
+#fertilizer-recommendations {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#fertilizer-recommendations h2 {
+    font-size: 2rem;
+    color: #4e4e4e;
+    margin-bottom: 15px;
+}
+
+#fertilizer-recommendations p {
+    font-size: 1.1rem;
+    color: #5c5c5c;
+    line-height: 1.6;
+}

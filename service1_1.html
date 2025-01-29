@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast - Government Services</title>
+    <link rel="stylesheet" href="service1_1.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="header-title">Weather Service</h1>
+        </div>
+    </header>
+
+    <!-- Weather Section -->
+    <section id="weather" class="weather-section">
+        <div class="container">
+            <div class="weather-container">
+                <h2 class="section-title">Weather Forecast</h2>
+                <input type="text" id="city" placeholder="Enter City Name" class="input-field" />
+                <button onclick="getWeather()" class="btn">Get Weather</button>
+            </div>
+
+            <!-- Weather Data -->
+            <div id="weather-result" class="weather-result">
+                <h3>Today's weather-:</h3>
+                <!-- Weather data will be displayed here -->
+            </div>
+
+            <!-- Tomorrow's Weather Section -->
+            <div id="tomorrow-weather-result" class="weather-result">
+                <h3>Tomorrow's weather-:</h3>
+                <!-- Tomorrow's weather will be displayed here -->
+            </div>
+
+            <!-- Upcoming Forecast Section (Moved to Separate Box) -->
+            <div id="upcoming-forecast-result" class="weather-result">
+                <h3>Upcoming Forecast-:</h3>
+                <!-- Weather forecast will be displayed here -->
+            </div>
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Weather Service. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal Section for Weather Alerts -->
+    <div id="weatherModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title">Weather Alert</h2>
+            <p id="modal-message">Bad weather conditions detected.</p>
+        </div>
+    </div>
+
+    <script src="service1_1.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Health Analysis</title>
+    <link rel="stylesheet" href="service2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Soil Health Analysis</h1>
+        <p>Get expert recommendations to enhance your soil's productivity.</p>
+    </header>
+
+    <!-- Soil Analysis Form Card -->
+    <section class="card form-card">
+        <form id="soil-form">
+            <h2>Enter Soil Details</h2>
+            <label for="ph">Soil pH:</label>
+            <input type="number" id="ph" name="ph" step="0.1" required>
+
+            <label for="nitrogen">Nitrogen Level (ppm):</label>
+            <input type="number" id="nitrogen" name="nitrogen" step="0.1" required>
+
+            <label for="phosphorus">Phosphorus Level (ppm):</label>
+            <input type="number" id="phosphorus" name="phosphorus" step="0.1" required>
+
+            <label for="potassium">Potassium Level (ppm):</label>
+            <input type="number" id="potassium" name="potassium" step="0.1" required>
+
+            <button type="button" onclick="analyzeSoil()">Analyze Soil</button>
+        </form>
+    </section>
+
+    <!-- Recommendations Display Section -->
+    <section id="recommendations-section" class="card recommendations-card hidden">
+        <h2>Soil Improvement Recommendations</h2>
+        <div id="recommendations"></div>
+    </section>
+
+    <!-- JavaScript File -->
+    <script src="service2.js"></script>
+</body>
+</html>

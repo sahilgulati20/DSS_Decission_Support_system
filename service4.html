@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Planting Assistant</title>
+    <link rel="stylesheet" href="service4.css">
+    <style>
+        /* Add some basic styles for the button */
+        #redirect-button {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            background-color: #8b6b3c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #redirect-button:hover {
+            background-color: #7a5621;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Farm Planting Assistant</h1>
+        <p>Guiding you through the best time to plant based on weather and soil health.</p>
+    </header>
+
+    <main>
+        <section id="location-input">
+            <label for="location">Enter your Location (City Name):</label>
+            <input type="text" id="location" placeholder="e.g., New Delhi">
+            <button onclick="getWeatherData()">Get Weather Forecast</button>
+        </section>
+
+        <section id="weather-info" class="hidden">
+            <h2>Weather Forecast</h2>
+            <div id="forecast"></div>
+        </section>
+
+        <section id="soil-info">
+            <h2>Soil Health</h2>
+            <p>Enter soil conditions to get better crop recommendations:</p>
+            <label for="soil-ph">Soil pH (4-9):</label>
+            <input type="number" id="soil-ph" min="4" max="9" placeholder="e.g., 6.5">
+            
+            <label for="soil-moisture">Soil Moisture (1-100%):</label>
+            <input type="number" id="soil-moisture" min="1" max="100" placeholder="e.g., 50">
+            
+            <label for="nitrogen">Nitrogen Level (ppm):</label>
+            <input type="number" id="nitrogen" name="nitrogen" step="0.1" required>
+
+            <label for="phosphorus">Phosphorus Level (ppm):</label>
+            <input type="number" id="phosphorus" name="phosphorus" step="0.1" required>
+
+            <label for="potassium">Potassium Level (ppm):</label>
+            <input type="number" id="potassium" name="potassium" step="0.1" required>
+            <button onclick="getCropRecommendations()">Get Crop Recommendations</button>
+
+
+        </form>
+    </section>
+            </select>
+            
+
+        </section>
+
+        <section id="planting-recommendations" class="hidden">
+            <h2>Best Planting Time Recommendations</h2>
+            <p id="planting-info"></p>
+            <p id="crop-info"></p>
+        </section>
+        <section id="fertilizer-recommendations" class="hidden">
+            <h2>Fertilizer Recommendations</h2>
+            <p id="fertilizer-info"></p>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Farm Planting Assistant</p>
+    </footer>
+
+    <!-- Redirect button -->
+    <button id="redirect-button" onclick="window.location.href='Sustainable.html';">Sustainable Farming Techniques</button>
+
+    <script src="service4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.1/papaparse.min.js"></script>
+
+</body>
+</html>
